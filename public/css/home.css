@@ -52,7 +52,7 @@ a, button{
     list-style: none;
     border-radius: 10px;
     opacity: 0;
-    visibility: visible;
+    visibility: hidden;
     transform: translateY(-10px);
     transition: all 0.4s ease;
     /*
@@ -85,7 +85,42 @@ a, button{
     pointer-events: all;
     */
 }
+
+
+
+/* all svg icon size specification */
 .icon{
     width: 5%;
     height: 5%;
+}
+.icon2{
+    width: 2%;
+    height: 2%;
+}  
+.icon3{
+    width: 1.5em;
+    height: 1.5em;
+}  
+
+
+
+
+
+/* header color for user management */
+#header nav{
+    background: rgb(138, 138, 138);
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+#site-main{
+    margin-top: 6em;
+}
+
+#site-main .container .box-nav > a{
+    font-size: 1em;
+    padding: .5em 1em;
+}
+#site-main .container form{
+    margin: 2em 0;
 }

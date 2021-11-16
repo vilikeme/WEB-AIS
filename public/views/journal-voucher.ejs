@@ -5,9 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/welcomepage.css">
+    <link rel="stylesheet" href="../css/user-management.css">
+
     <title>Journal Voucher</title>
 </head>
 <body>
+<!-- navigation with dropdown list-->
     <nav>
         <div class ="dropdown">
                 <div class="journals">
@@ -32,5 +36,75 @@
                 </div>
         </div>
     </nav>
+<!--end of navigation-->
+<!--header-->
+<header id="header">
+    <nav>
+        <div class ="container">
+            <div class="text-center">
+                <a href="#" class="nav-brand text-dark">Journal Voucher page</a>
+            </div>
+        </div>
+    </nav>
+</header>
+<!--end of header-->
+
+<main id="site-main"></main>
+
+<div class="padded">CSV FILE:
+  <form action="#"> <!--create a .php action-->
+    <input type="file" id="myFile" name="filename">
+    <input type="submit">
+  </form>
+  <br>
+  <form action="/action_page.php">
+    <label for="pdf-report">Report Option:</label>
+    <select name="pdf-report" id="pdf-report">
+      <option value="template1">SampleReport1</option>
+      <option value="Template2">SampleReport2</option>
+      <option value="template3">SampleReport3</option>
+      <option value="template4">SampleReport4</option>
+    </select>
+    <input type="submit">
+  </form>
+
+</div>
+  
+
+<form action ="/" method="POST">
+<table class="table">
+  <thead class="thead-dark">
+  <tr>
+      <td><strong>DATE</strong></td>
+      <td><strong>REF.</strong></td>
+      <td><strong>CUSTOMER</strong></td>
+      <td><strong>AMOUNT</strong></td>
+  </tr>
+  </thead>
+  <tbody>
+    <tr>
+        <td>11/10/2021</td>
+        <td>30275983275</td>
+        <td>JACOB UY</td>
+        <td>PHP 95,535</td>
+     </tr>
+     <tr>
+      <td>11/10/2021</td>
+      <td>38505705</td>
+      <td>DAN SORIANO</td>
+      <td>PHP 77,755</td>
+   </tr>
+  </tbody>
+</table>
+</form>
+</main>
+
+</br>
+</br>
+
+<div class="padded">
+<button type="button" style="height:25px; width:100px" onclick="alert('Extracting Report...jk')">EXTRACT</button>
+<button type="button" style="height:25px; width:100px" onclick="alert('Generating Report...jk')">GENERATE</button>
+</div>
 </body>
 </html>

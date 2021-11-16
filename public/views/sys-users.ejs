@@ -5,9 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/home.css">
+    
+    <link rel="stylesheet" href="../css/user-management.css">
     <title>System Users</title>
 </head>
 <body>
+<!-- navigation with dropdown list-->
     <nav>
         <div class ="dropdown">
                 <div class="journals">
@@ -32,5 +35,66 @@
                 </div>
         </div>
     </nav>
+<!--end of navigation-->
+<!--header-->
+<header id="header">
+    <nav>
+        <div class ="container">
+            <div class="text-center">
+                <a href="#" class="nav-brand text-dark">User Management System</a>
+            </div>
+        </div>
+    </nav>
+</header>
+<!--end of header-->
+<!--MAIN SITE-->
+<main id="site-main">
+    <div class="container">
+        <div class="box-nav d-flex justify-between">
+            <a href="/add_users" class="border-shadow">
+                <span class ="text-gradient"><img src="../svg/user_add.svg" alt="file icon" class="icon2">New User</span>
+            </a>
+        </div>
+<!--Form handling-->
+        <form action='#' method="POST">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--sample user 1-->
+                    <tr>
+                        <td>1</td>
+                        <td>dummyUser1</td>
+                        <td>example1@gmail.com</td>
+                        <td>
+                            <a href=# class="btn border-shadow delete">
+                                <span class="text-gradient"><img src="../svg/trash-alt-regular.svg" alt="trash icon" class="icon3"></span>
+                            </a>
+                        </td>
+                    </tr>
+                    <!--sample user 2-->
+                    <!--sample user 1-->
+                    <tr>
+                        <td>2</td>
+                        <td>dummyUser2</td>
+                        <td>example2@gmail.com</td>
+                        <td>
+                            <a href=# class="btn border-shadow delete">
+                                <span class="text-gradient"><img src="../svg/trash-alt-regular.svg" alt="trash icon" class="icon3"></span>
+                            </a>
+                        </td>
+                    </tr>
+                    <!--sample user 2-->
+                </tbody>
+            </table>
+        </form>
+    </div>
+</main>
 </body>
 </html>

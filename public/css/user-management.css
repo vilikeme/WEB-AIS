@@ -1,0 +1,106 @@
+
+:root{
+    --dark: #ffffff;
+    --light: #adb5bd;
+    --border: #dee2e6;
+    --border-btn: #edf2f4;
+}
+
+.container{
+    max-width: 1024px;
+    margin:auto;
+}
+
+.nav-brand{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+/*
+.d-flex{
+    display:flex;
+    flex-wrap: wrap;
+}
+*/
+.justify-between{
+    justify-content: space-between;
+}
+
+.text-center{
+    text-align: center;
+
+}
+
+.text-dark{
+    color: var(--dark);
+}
+
+.inline{
+    display: inline-block;
+}
+
+.text-light{
+    color: var(--light);
+}
+
+.text-gradient{
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* header color for user management */
+#header nav{
+    background: rgb(138, 138, 138);
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+#site-main{
+    margin-top: 6em;
+}
+
+#site-main .container .box-nav > a{
+    font-size: 1em;
+    padding: .5em 1em;
+}
+#site-main .container form{
+    margin: 2em 0;
+}
+
+table{
+    border-spacing: 0px;
+    width: 100%;
+}
+
+.table td, .table th{
+    padding: .75em;
+    vertical-align: top;
+    text-align: center;
+    border-top: 5px solid var(--border);
+}
+
+.table td > a.btn{
+    padding: .3em 1em;
+    font-size: 1.1em;
+    margin:0 .2em;
+}
+
+.table tr:hover{
+    background-color: rgb(240, 240, 240);
+}
+
+@media only screen and(max-width: 1024px){
+    table, thead, tbody, th, td, tr{
+        display: block
+    }
+}
+
+tr{
+    border: 1px solid var(--border)
+}
+
+td{
+    border: none;
+    position: relative;
+}

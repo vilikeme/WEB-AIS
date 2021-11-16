@@ -2,8 +2,10 @@
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="../css/home.css">
+<link rel="stylesheet" href="../css/user-management.css">
 
 <body>
+<!-- navigation with dropdown list-->
   <nav>
     <div class ="dropdown">
             <div class="journals">
@@ -28,51 +30,19 @@
             </div>
     </div>
 </nav>
-<main id="site-main"></main>
+<!--end of navigation-->
 
-<div class="padded">CSV FILE:
-  <form action="#"> <!--create a .php action-->
-    <input type="file" id="myFile" name="filename">
-    <input type="submit">
-  </form>
+<!--header-->
+<header id="header">
+  <nav>
+      <div class ="container">
+          <div class="text-center">
+              <a href="#" class="nav-brand text-dark">Bookkeeping page</a>
+          </div>
+      </div>
+  </nav>
+</header>
+<!--end of header-->
 
-</div>
-  
-
-<form action ="/" method="POST">
-<table class="table">
-  <thead class="thead-dark">
-  <tr>
-      <td><strong>DATE</strong></td>
-      <td><strong>REF.</strong></td>
-      <td><strong>CUSTOMER</strong></td>
-      <td><strong>AMOUNT</strong></td>
-  </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>11/10/2021</td>
-      <td>30275983275</td>
-      <td>JACOB UY</td>
-      <td>PHP 95,535</td>
-   </tr>
-   <tr>
-    <td>11/10/2021</td>
-    <td>38505705</td>
-    <td>DAN SORIANO</td>
-    <td>PHP 77,755</td>
- </tr>
-  </tbody>
-</table>
-</form>
-</main>
-
-</br>
-</br>
-
-<div class="padded">
-<button type="button" style="height:25px; width:100px" onclick="alert('Extracting Report...jk')">EXTRACT</button>
-<button type="button" style="height:25px; width:100px" onclick="alert('Generating Report...jk')">GENERATE</button>
-</div>
 </body>
 </html> 
