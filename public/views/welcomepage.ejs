@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../css/home.css">
+
+<body>
+  <nav>
+    <div class ="dropdown">
+            <div class="journals">
+                <button><img src="../svg/book-open-solid.svg" alt="journal icon" class="icon"> Journals</button>
+                <ul>
+                    <a href ="/journal"><li>Journal Voucher Entry</li></a>
+                    <a href ="/tbalance"><li>Trial Balance</li></a>
+                </ul>
+            </div>
+            <div class="masterFile">
+                <button><img src="../svg/layer-group-solid.svg" alt="layer icon" class="icon"> MasterFile</button>
+                <ul>
+                    <a href="/users"><li>System Users</li> </a>                     
+                    <a href ="/coa"><li>Chart of Accounts</li></a> 
+                </ul>
+            </div>
+            <div class="reports">
+                <button><img src="../svg/file-alt-solid.svg" alt="file icon" class="icon"> Report</button>
+                <ul>
+                    <a href="/welcomepage"><li>Reports</li> </a>                     
+                </ul>
+            </div>
+    </div>
+</nav>
+<main id="site-main"></main>
+
+<div class="padded">CSV FILE:
+  <form action="#"> <!--create a .php action-->
+    <input type="file" id="myFile" name="filename">
+    <input type="submit">
+  </form>
+
+</div>
+  
+
+<form action ="/" method="POST">
+<table class="table">
+  <thead class="thead-dark">
+  <tr>
+      <td><strong>DATE</strong></td>
+      <td><strong>REF.</strong></td>
+      <td><strong>CUSTOMER</strong></td>
+      <td><strong>AMOUNT</strong></td>
+  </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>11/10/2021</td>
+      <td>30275983275</td>
+      <td>JACOB UY</td>
+      <td>PHP 95,535</td>
+   </tr>
+   <tr>
+    <td>11/10/2021</td>
+    <td>38505705</td>
+    <td>DAN SORIANO</td>
+    <td>PHP 77,755</td>
+ </tr>
+  </tbody>
+</table>
+</form>
+</main>
+
+</br>
+</br>
+
+<div class="padded">
+<button type="button" style="height:25px; width:100px" onclick="alert('Extracting Report...jk')">EXTRACT</button>
+<button type="button" style="height:25px; width:100px" onclick="alert('Generating Report...jk')">GENERATE</button>
+</div>
+</body>
+</html> 
