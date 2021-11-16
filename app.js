@@ -7,7 +7,7 @@ const { off } = require('process');
 
 //initialize app
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5000;
 
 app.set('views', path.join(__dirname, './public/views'));
 
@@ -17,7 +17,7 @@ app.set('view engine', 'ejs');
 //static folder || loads all assets from public folder
 app.use(express.static(__dirname + "/public"));
 
-app.listen(3000)
+app.listen(PORT)
 app.use(sendViewMiddleware);
 
 //fetch data from the request
